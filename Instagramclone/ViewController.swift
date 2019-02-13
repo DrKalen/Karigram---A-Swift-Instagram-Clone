@@ -11,10 +11,22 @@ import Parse
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var signupOrLoginButton: UIButton!
+    @IBOutlet weak var switchLoginModeButton: UIButton!
+    
+    @IBAction func signupOrLogin(_ sender: Any) {
+    }
+    
+    @IBAction func switchLoginMode(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
+        /* Add, save, update a Comment
         let comment = PFObject(className: "Comment")
         
         comment["text"] = "Nice shot!"
@@ -26,9 +38,7 @@ class ViewController: UIViewController {
                 print("Save failed")
             }
         }
-        */
-        
-        /*
+  
         let query = PFQuery(className: "Comment")
         query.getObjectInBackground(withId: "kwhTtBKEmb") { (object, eror) in
             if let comment = object {
@@ -37,7 +47,7 @@ class ViewController: UIViewController {
                 }
             }
         }
-        */
+ 
         let query = PFQuery(className: "Comment")
         query.getObjectInBackground(withId: "kwhTtBKEmb") { (object, eror) in
             if let comment = object {
@@ -51,6 +61,7 @@ class ViewController: UIViewController {
                 })
             }
         }
+        */
     }
 
 
