@@ -36,12 +36,12 @@ class FeedTableViewController: UITableViewController {
                     for follower in followers {
                         if let followedUser = follower["following"] {
                             let query = PFQuery(className: "Post")
-                            query.whereKey("userId", equalTo: followedUser)
+                            query.whereKey("userid", equalTo: followedUser)
                             query.findObjectsInBackground(block: { (objects, error) in
                                 if let posts = objects {
                                     for post in posts {
                                         self.comments.append(post["message"] as! String)
-                                        self.usernames.append(self.users[post["userId"] as! String]!)
+                                        self.usernames.append(self.users[post["userid"] as! String]!)
                                         self.imageFiles.append(post["imageFile"] as! PFFileObject)
                                         self.tableView.reloadData()
                                     }
@@ -64,7 +64,8 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return comments.count
+        
     }
 
    
@@ -72,8 +73,8 @@ class FeedTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedTableViewCell
 
         cell.postedImage.image = UIImage(named: "footbridge.jpg")
-        cell.comment.text = "Hi there!"
-        cell.userInfo.text = "Username"
+        cell.comment.text = comments[indexPath.row]
+        cell.userInfo.text = usernames[indexPath.row]
 
         return cell
     }
