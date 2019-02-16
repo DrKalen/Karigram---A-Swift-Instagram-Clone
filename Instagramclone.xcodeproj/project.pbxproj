@@ -16,6 +16,9 @@
 		2439CE7A2211E57200222A14 /* InstagramcloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2439CE792211E57200222A14 /* InstagramcloneTests.swift */; };
 		2439CE852211E57200222A14 /* InstagramcloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2439CE842211E57200222A14 /* InstagramcloneUITests.swift */; };
 		248E39372215C4F2004A4402 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E39362215C4F2004A4402 /* UserTableViewController.swift */; };
+		24AE75D12218728800B47093 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE75D02218728800B47093 /* FeedTableViewController.swift */; };
+		24AE75D32218764100B47093 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE75D22218764100B47093 /* FeedTableViewCell.swift */; };
+		24AE75D522187C3800B47093 /* footbridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24AE75D422187C3800B47093 /* footbridge.jpg */; };
 		E97A14BEA78EF630870B5A43 /* Pods_Instagramclone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC0AAC19725AFA44C06C38E /* Pods_Instagramclone.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		2439CE842211E57200222A14 /* InstagramcloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramcloneUITests.swift; sourceTree = "<group>"; };
 		2439CE862211E57200222A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		248E39362215C4F2004A4402 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		24AE75D02218728800B47093 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		24AE75D22218764100B47093 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		24AE75D422187C3800B47093 /* footbridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = footbridge.jpg; sourceTree = "<group>"; };
 		9340276344B083951E090557 /* Pods-Instagramclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagramclone.debug.xcconfig"; path = "Target Support Files/Pods-Instagramclone/Pods-Instagramclone.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC0AAC19725AFA44C06C38E /* Pods_Instagramclone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagramclone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDC57654669AA1C6C973383 /* Pods-Instagramclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagramclone.release.xcconfig"; path = "Target Support Files/Pods-Instagramclone/Pods-Instagramclone.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				2439CE642211E57100222A14 /* AppDelegate.swift */,
 				2439CE662211E57100222A14 /* ViewController.swift */,
 				2439CE682211E57100222A14 /* Main.storyboard */,
+				24AE75D22218764100B47093 /* FeedTableViewCell.swift */,
+				24AE75D422187C3800B47093 /* footbridge.jpg */,
+				24AE75D02218728800B47093 /* FeedTableViewController.swift */,
 				24188F7E22172622004C81C7 /* PostViewController.swift */,
 				248E39362215C4F2004A4402 /* UserTableViewController.swift */,
 				2439CE6B2211E57200222A14 /* Assets.xcassets */,
@@ -263,6 +272,7 @@
 			files = (
 				2439CE6F2211E57200222A14 /* LaunchScreen.storyboard in Resources */,
 				2439CE6C2211E57200222A14 /* Assets.xcassets in Resources */,
+				24AE75D522187C3800B47093 /* footbridge.jpg in Resources */,
 				2439CE6A2211E57100222A14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24188F7F22172622004C81C7 /* PostViewController.swift in Sources */,
+				24AE75D32218764100B47093 /* FeedTableViewCell.swift in Sources */,
 				2439CE672211E57100222A14 /* ViewController.swift in Sources */,
+				24AE75D12218728800B47093 /* FeedTableViewController.swift in Sources */,
 				248E39372215C4F2004A4402 /* UserTableViewController.swift in Sources */,
 				2439CE652211E57100222A14 /* AppDelegate.swift in Sources */,
 			);
